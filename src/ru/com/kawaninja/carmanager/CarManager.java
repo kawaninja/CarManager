@@ -12,12 +12,12 @@ public class CarManager {
 		Car renault = new Bus("Renault Laguna", 2000, 9700, 1600, Color.WHITE);
 
 		Car renault2 = new Bus("Renault Laguna", 2000, 9700, 1600, Color.WHITE);
-		
-		List <Car> cars = new ArrayList<>();
+
+		List<Car> cars = new ArrayList<>();
 		cars.add(prius);
 		cars.add(renault);
 		cars.add(renault2);
-		
+
 		System.out.println(cars);
 
 		prius.addDistance(1000);
@@ -31,7 +31,7 @@ public class CarManager {
 
 //		System.out.println(prius.equals(renault2));
 //		System.out.println(renault.equals(renault2));
-		
+
 		System.out.println(prius.isReadyToService());
 		System.out.println(renault.isReadyToService());
 

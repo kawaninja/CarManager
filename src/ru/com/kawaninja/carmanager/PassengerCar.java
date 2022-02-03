@@ -8,12 +8,10 @@ public class PassengerCar extends Car {
 
 	@Override
 	public boolean isReadyToService() {
-		
-		if (distanceOnServise>10000) {
+
+		if (distanceOnServise > 10000) {
 			return true;
-			}
-				return false;
-			}
+		}
+		return false;
 	}
-
-
+}

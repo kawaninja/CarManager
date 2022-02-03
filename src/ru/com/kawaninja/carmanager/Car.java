@@ -11,7 +11,6 @@ public abstract class Car implements Serviceable {
 	Color color;
 	private double distance = 0;
 	protected double distanceOnServise = 0;
-	
 
 	public Car(String name, int yearOfProduction, int price, int weight, Color color) {
 		this.name = name;
@@ -43,10 +42,6 @@ public abstract class Car implements Serviceable {
 //		System.out.println("Inside method print: " + additionalDistance);
 //
 	}
-	
-	
-	
-	
 
 //	необходимо вернуть значение distanceOnServise на ноль при достижении пробега 50000
 
@@ -57,10 +52,7 @@ public abstract class Car implements Serviceable {
 //		return 0;
 //		
 //		}
-		
 
-	
-	
 	public double getDistanceOnServise() {
 		return distanceOnServise;
 	}
