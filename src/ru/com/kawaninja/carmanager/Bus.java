@@ -8,7 +8,9 @@ public class Bus extends Car {
 
 	@Override
 	public boolean isReadyToService() {
-		
+		return false;
 	}
+
+}
 
 
