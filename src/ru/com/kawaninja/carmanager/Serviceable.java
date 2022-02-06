@@ -9,4 +9,5 @@ public interface Serviceable {
 	public void addDistance(int additionalDistance);
 
 	public void addDistance(double additionalDistance);
+	
 }

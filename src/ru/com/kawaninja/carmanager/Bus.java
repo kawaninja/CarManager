@@ -12,6 +12,3 @@ public class Bus extends Car {
 	}
 
 }
-
-// My first sincro from PC
-// My first sincronization from Mac OS

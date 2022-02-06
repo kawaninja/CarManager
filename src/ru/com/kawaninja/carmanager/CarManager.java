@@ -24,17 +24,19 @@ public class CarManager {
 		prius.addDistance(2000);
 		prius.addDistance(20.7);
 		prius.addDistance(15000);
-		renault.addDistance(15000);
-
+		
+		
 		System.out.println(prius);
 		System.out.println(renault);
 
 //		System.out.println(prius.equals(renault2));
 //		System.out.println(renault.equals(renault2));
-
-		System.out.println(prius.isReadyToService());
-		System.out.println(renault.isReadyToService());
+//
+//		System.out.println(prius.isReadyToService());
+//		System.out.println(renault.isReadyToService());
+		
+		prius.goToService();
+		renault.goToService();
 
 	}
-
 }

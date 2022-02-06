@@ -43,7 +43,7 @@ public abstract class Car implements Serviceable {
 //
 	}
 
-//	необходимо вернуть значение distanceOnServise на ноль при достижении пробега 50000
+//	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ distanceOnServise пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 50000
 
 //	public double service () {
 //		if (distanceOnServise > 50000) {
@@ -89,5 +89,12 @@ public abstract class Car implements Serviceable {
 		return color == other.color && Objects.equals(name, other.name) && price == other.price
 				&& weight == other.weight && yearOfProduction == other.yearOfProduction;
 	}
+	
+	void goToService () {
+		if (distanceOnServise > 10000) {
+			System.out.println ("Go to Servise");
+		}
+	}
 
 }
+

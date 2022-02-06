@@ -5,7 +5,13 @@ public class PassengerCar extends Car {
 	public PassengerCar(String name, int yearOfProduction, int price, int weight, Color color) {
 		super(name, yearOfProduction, price, weight, color);
 	}
-
+	
+	String messageGo;
+	String messageOfService = "Go to Service";
+	
+	
+	
+	
 	@Override
 	public boolean isReadyToService() {
 
@@ -14,4 +20,11 @@ public class PassengerCar extends Car {
 		}
 		return false;
 	}
+		
+	
 }
+	
+	
+	
+	
+
