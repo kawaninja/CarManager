@@ -52,6 +52,8 @@ public abstract class Car implements Serviceable {
 //		return 0;
 //		
 //		}
+	
+	
 
 	public double getDistanceOnServise() {
 		return distanceOnServise;
@@ -90,11 +92,26 @@ public abstract class Car implements Serviceable {
 				&& weight == other.weight && yearOfProduction == other.yearOfProduction;
 	}
 	
-	void goToService () {
+	
+
+	public void goToService() {
 		if (distanceOnServise > 10000) {
-			System.out.println ("Go to Servise");
+			System.out.println("Go to Servise");
+		}
+		if (distanceOnServise < 10000) {
+			System.out.println("Servise not Ready");
 		}
 	}
 
-}
+	public void distanceOfServiceToZero() {
+		if (distanceOnServise > 10000) {
+			distanceOnServise = 0;
+		}
+		
 
+	}
+
+	public void serv() {
+		System.out.println(distanceOnServise);
+	}
+}

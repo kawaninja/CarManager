@@ -25,7 +25,7 @@ public class CarManager {
 		prius.addDistance(20.7);
 		prius.addDistance(15000);
 		
-		
+
 		System.out.println(prius);
 		System.out.println(renault);
 
@@ -34,9 +34,19 @@ public class CarManager {
 //
 //		System.out.println(prius.isReadyToService());
 //		System.out.println(renault.isReadyToService());
-		
+
 		prius.goToService();
 		renault.goToService();
+		renault2.goToService();
+
+		prius.distanceOfServiceToZero();
+
+		prius.addDistance(1000);
+
+		System.out.println(prius);
+
+		prius.serv();
+		renault.serv();
 
 	}
 }
