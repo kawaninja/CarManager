@@ -24,7 +24,6 @@ public class CarManager {
 		prius.addDistance(2000);
 		prius.addDistance(20.7);
 		prius.addDistance(15000);
-		
 
 		System.out.println(prius);
 		System.out.println(renault);
@@ -41,6 +40,7 @@ public class CarManager {
 
 		prius.distanceOfServiceToZero();
 
+		prius.addDistance(1000);
 		prius.addDistance(1000);
 
 		System.out.println(prius);

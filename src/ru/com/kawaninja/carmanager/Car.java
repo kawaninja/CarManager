@@ -23,11 +23,10 @@ public abstract class Car implements Serviceable {
 	public void addDistance(int additionalDistance) {
 		distance += additionalDistance;
 		distanceOnServise += additionalDistance;
-//		if (additionalDistance < 0); 
-//		{
+		if (additionalDistance < 0) {
 
-//			throw new NullPointerException("Wrong distance!");
-//		}
+			throw new NullPointerException("Wrong distance!");
+		}
 //		System.out.println("Inside method print: " + additionalDistance);
 
 	}
@@ -35,25 +34,13 @@ public abstract class Car implements Serviceable {
 	public void addDistance(double additionalDistance) {
 		distance += additionalDistance;
 		distanceOnServise += additionalDistance;
-//		if (additionalDistance < 0) {
-//
-//			throw new NullPointerException("Wrong distance!");
-//		}
+		if (additionalDistance < 0) {
+
+			throw new NullPointerException("Wrong distance!");
+		}
 //		System.out.println("Inside method print: " + additionalDistance);
-//
+
 	}
-
-//	���������� ������� �������� distanceOnServise �� ���� ��� ���������� ������� 50000
-
-//	public double service () {
-//		if (distanceOnServise > 50000) {
-//
-//		return distanceOnServise = 0;}
-//		return 0;
-//		
-//		}
-	
-	
 
 	public double getDistanceOnServise() {
 		return distanceOnServise;
@@ -91,14 +78,11 @@ public abstract class Car implements Serviceable {
 		return color == other.color && Objects.equals(name, other.name) && price == other.price
 				&& weight == other.weight && yearOfProduction == other.yearOfProduction;
 	}
-	
-	
 
 	public void goToService() {
 		if (distanceOnServise > 10000) {
 			System.out.println("Go to Servise");
-		}
-		if (distanceOnServise < 10000) {
+		} else {
 			System.out.println("Servise not Ready");
 		}
 	}
@@ -107,7 +91,6 @@ public abstract class Car implements Serviceable {
 		if (distanceOnServise > 10000) {
 			distanceOnServise = 0;
 		}
-		
 
 	}
 
